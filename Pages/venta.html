@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Play&Win - Venta</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/venta.css"/>
+    <link rel="stylesheet" href="../assets/css/main.css"/>
+    <link rel="stylesheet" href="../assets/css/media.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap-Quartz.css"/>
+  </head>
+
+  <body>
+    <!-- Javascript -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="logo">
+        <a href="../Pages/index.html" class="logo-toggle">
+          <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index">
+        </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="a-navbar" href="../Pages/index.html#juegos" onclick="toggleMenu()">Juegos</a></li>
+          <li><a class="a-navbar" href="../Pages/venta.html" onclick="toggleMenu()">Venta</a></li>
+          <li><a class="a-navbar" href="../Pages/index.html#comunidad" onclick="toggleMenu()">Comunidad</a></li>
+          <li><a class="a-navbar" href="../Pages/index.html#contacto" onclick="toggleMenu()">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="../Pages/index.html" class="logo-toggle">
+        <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index">
+        </a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a class="a-navbar" href="../Pages/index.html#juegos" onclick="toggleMenu()">Juegos</a></li>
+          <li><a class="a-navbar" href="../Pages/venta.html" onclick="toggleMenu()">Venta</a></li>
+          <li><a class="a-navbar" href="../Pages/index.html#comunidad" onclick="toggleMenu()">Comunidad</a></li>
+          <li><a class="a-navbar" href="../Pages/index.html#contacto" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+
+        <!-- Venta de Juegos -->
+        <section id="venta">
+          <div class="section-container-venta">
+            <h1 class="title-venta">Venta de Juegos</h1>
+            <div class="section-container">
+            </div>
+          </div>
+        </section>
+
+    <!-- Filtro -->
+    <div class="filter-section">
+      <h2 class="filtro-titulo">Filtrar por:</h2>
+      <form>
+        <h3 class="toggle">Genero</h3>
+        <div>
+          <label><input type="checkbox" name="genre" value="action">Acción</label>
+          <label><input type="checkbox" name="genre" value="adventure">Aventura</label>
+          <label><input type="checkbox" name="genre" value="strategy">Estrategia</label>
+          <label><input type="checkbox" name="genre" value="rpg">RPG</label>
+          <label><input type="checkbox" name="genre" value="sports">Deporte</label>
+          <label><input type="checkbox" name="genre" value="simulation">Simulacion</label>
+        </div>
+        <h3 class="toggle">Plataforma</h3>
+        <div>
+          <label><input type="checkbox" name="platform" value="pc">PC</label>
+          <label><input type="checkbox" name="platform" value="console">Consola</label>
+          <label><input type="checkbox" name="platform" value="mobile">Movil</label>
+        </div>
+        <h3 class="toggle">Precio</h3>
+        <div>
+          <label><input type="checkbox" name="price" value="free">Gratis</label>
+          <label><input type="checkbox" name="price" value="low">$5 - $10</label>
+          <label><input type="checkbox" name="price" value="medium">$11 - $20</label>
+          <label><input type="checkbox" name="price" value="high">$20+</label>
+        </div>
+        <h3 class="toggle">Estado</h3>
+        <div>
+          <label><input type="checkbox" name="state" value="recent">Nuevo</label>
+          <label><input type="checkbox" name="state" value="sale">Ofertas</label>
+          <label><input type="checkbox" name="state" value="bestseller">Mas Vendidos</label>
+        </div>
+        <h3 class="toggle">Rating</h3>
+        <div>
+          <label><input type="checkbox" name="rating" value="5">5</label>
+          <label><input type="checkbox" name="rating" value="4">4</label>
+          <label><input type="checkbox" name="rating" value="3">3</label>
+          <label><input type="checkbox" name="rating" value="2">2</label>
+          <label><input type="checkbox" name="rating" value="1">1</label>
+        </div>
+        <button type="button" class="btn btn-primary" id="borrar-filtrado">Borrar filtrado</button>
+      </form>
+    </div>
+
+    <!-- Imagenes -->
+    <div class="catalogo-imagenes">
+      <img src="../assets/img/juegos/sims.jpg" alt="Imagen 1">
+      <img src="../assets/img/juegos/apex-legends.jpg" alt="Imagen 2">
+      <img src="../assets/img/juegos/fc-24.jpeg" alt="Imagen 3">
+      <img src="../assets/img/juegos/immortals.jpg" alt="Imagen 4">
+      <img src="../assets/img/juegos/madden-24.jpg" alt="Imagen 5">
+    </div>
+
+    <!-- Btn js arriba -->
+    <button id="btn-ir-arriba">
+      <img src="./assets/img/Icons/up.png" />
+    </button>
+
+    <!-- Script Filtrado -->
+    <script>
+      const form = document.querySelector('form');
+form.addEventListener('click', event => {
+  if (event.target.classList.contains('toggle')) {
+    const div = event.target.nextElementSibling;
+    div.style.display = div.style.display === 'none' ? 'block' : 'none';
+  }
+});
+
+const borrarFiltradoBtn = document.getElementById('borrar-filtrado');
+  borrarFiltradoBtn.addEventListener('click', () => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => checkbox.checked = false);
+  });
+    </script>
+
+  </body>
+</html>

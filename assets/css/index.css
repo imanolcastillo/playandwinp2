@@ -1,0 +1,79 @@
+:root {
+  --bs-blue: #3a8fd9;
+  --bs-indigo: #6610f2;
+  --bs-purple: #686dc3;
+  --bs-pink: #e83283;
+  --bs-red: #fc346f;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #41d7a7;
+  --bs-teal: #528fb3;
+  --bs-cyan: #39cbfb;
+  --color-not-to-white: #F0F0F0;
+  --color-not-to-black: #242526;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+/* Juegos */
+#juegos {
+  position: relative;
+  margin-top: 3%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 4rem;
+  height: 100%;
+}
+
+.title-juegos {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--bs-blue);
+}
+
+/* Comunidad */
+#comunidad {
+  position: relative;
+  margin-top: 3%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 4rem;
+  height: 100%;
+}
+
+.title-comunidad {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--bs-blue);
+}
+
+/* Contacto */
+#contacto {
+  position: relative;
+  margin-top: 3%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 4rem;
+  height: 100%;
+}
+
+.title-contacto {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--bs-blue);
+}
