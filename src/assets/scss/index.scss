@@ -1,0 +1,64 @@
+@import "variables";
+
+/* Juegos */
+#juegos {
+  position: relative;
+  margin-top: 3%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 4rem;
+  height: 100%;
+}
+
+.title-juegos {
+  font-size: 3rem;
+  text-align: center;
+  color: $bs-blue;
+}
+
+/* Comunidad */
+#comunidad {
+  position: relative;
+  margin-top: 3%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 4rem;
+  height: 100%;
+}
+
+.title-comunidad {
+  font-size: 3rem;
+  text-align: center;
+  color: $bs-blue;
+}
+
+/* Contacto */
+#contacto {
+  position: relative;
+  margin-top: 3%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 4rem;
+  height: 100%;
+}
+
+.title-contacto {
+  font-size: 3rem;
+  text-align: center;
+  color: $bs-blue;
+}
