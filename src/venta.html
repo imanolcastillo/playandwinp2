@@ -1,192 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Play&Win - Venta</title>
+    <title>Play&Win - Ventas</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/venta.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/media.css" />
-    <link rel="stylesheet" href="../assets/css/bootstrap-Quartz.css" />
-  </head>
+    <link rel="stylesheet" href="../assets/css/catalogo.css" />
+    <link rel="stylesheet" href="../assets/css/venta.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap-Quartz.css" /> -->
+</head>
 
-  <body>
+<body>
     <!-- Javascript -->
     <script src="./assets/js/main.js"></script>
 
     <!-- Navbar -->
     <nav id="navbar">
-      <div class="logo">
-        <a href="../index.html" class="logo-toggle">
-          <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index" />
-        </a>
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li>
-            <a
-              class="a-navbar"
-              href="../index.html#juegos"
-              onclick="toggleMenu()"
-              >Juegos</a
-            >
-          </li>
-          <li>
-            <a class="a-navbar" href="../venta.html" onclick="toggleMenu()"
-              >Venta</a
-            >
-          </li>
-          <li>
-            <a
-              class="a-navbar"
-              href="../index.html#comunidad"
-              onclick="toggleMenu()"
-              >Comunidad</a
-            >
-          </li>
-          <li>
-            <a
-              class="a-navbar"
-              href="../index.html#contacto"
-              onclick="toggleMenu()"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-      </div>
+        <div class="logo">
+            <a href="../index.html" class="logo-toggle">
+                <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index" />
+            </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li>
+                    <a class="a-navbar" href="../index.html#juegos" onclick="toggleMenu()">Juegos</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../index.html#comunidad" onclick="toggleMenu()">Comunidad</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../index.html#contacto" onclick="toggleMenu()">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">
-        <a href="../index.html" class="logo-toggle">
-          <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index" />
-        </a>
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">
+            <a href="../index.html" class="logo-toggle">
+                <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index" />
+            </a>
         </div>
-        <div class="menu-links">
-          <li>
-            <a
-              class="a-navbar"
-              href="../index.html#juegos"
-              onclick="toggleMenu()"
-              >Juegos</a
-            >
-          </li>
-          <li>
-            <a class="a-navbar" href="../venta.html" onclick="toggleMenu()"
-              >Venta</a
-            >
-          </li>
-          <li>
-            <a
-              class="a-navbar"
-              href="../index.html#comunidad"
-              onclick="toggleMenu()"
-              >Comunidad</a
-            >
-          </li>
-          <li>
-            <a
-              class="a-navbar"
-              href="../index.html#contacto"
-              onclick="toggleMenu()"
-              >Contacto</a
-            >
-          </li>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li>
+                    <a class="a-navbar" href="../index.html#juegos" onclick="toggleMenu()">Juegos</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../index.html#comunidad" onclick="toggleMenu()">Comunidad</a>
+                </li>
+                <li>
+                    <a class="a-navbar" href="../index.html#contacto" onclick="toggleMenu()">Contacto</a>
+                </li>
+            </div>
         </div>
-      </div>
     </nav>
+    <main>
+        <!-- Venta de Juegos -->
+        <section id="venta">
+            <div class="section-container-venta">
+                <h1 class="title-venta">Venta de Juegos</h1>
+                <div class="section-container"></div>
+            </div>
+        </section>
+        <div class="fx-row fx-space-between fx-items-center">
 
-    <!-- Venta de Juegos -->
-    <section id="venta">
-      <div class="section-container-venta">
-        <h1 class="title-venta">Venta de Juegos</h1>
-        <div class="section-container"></div>
-      </div>
-    </section>
-    <section class="filtrojuegos">
-      <h2 class="text-filtros">Filtros</h2>
-      <form id="filter-form">
-        <div id="filter-section" class="grid">
-          <input
-            type="text"
-            id="text"
-            placeholder="Nombre"
-            class="filter-field"
-          />
-          <input
-            type="text"
-            id="genre"
-            placeholder="Genero"
-            class="filter-field"
-          />
-          <input
-            type="text"
-            id="platform"
-            placeholder="Plataforma"
-            class="filter-field"
-          />
-          <input
-            type="number"
-            id="rating"
-            placeholder="Rating"
-            class="filter-field"
-            min="0"
-          />
-          <input
-            type="number"
-            id="price-min"
-            placeholder="Precio mínimo"
-            class="filter-field"
-            min="0"
-          />
-          <input
-            type="number"
-            id="price-max"
-            placeholder="Precio máximo"
-            class="filter-field"
-            min="0"
-          />
+            <button id="addSale" class="btn-action">Agregar Nueva Venta</button>
+
         </div>
-        <div class="btn">
-          <button type="submit" id="apply-filters">Aplicar filtros</button>
-          <button type="reset" id="reset-filters">Restablecer</button>
+
+        <br>
+
+        <form id="filter-form" class="filter-section">
+
+            <select id="juego-filtro" class="filter-field" placeholder="Juego">
+                <option value="" selected>Selecciona un Juego</option>
+                <option value="Zelda">The Legend of Zelda: Breath of the Wild</option>
+                <option value="GTAV">Grand Theft Auto V</option>
+                <option value="Minecraft">Minecraft</option>
+                <option value="FIFA">FIFA 23</option>
+            </select>
+
+            <input type="text" id="vendedor-filtro" placeholder="Nombre del Vendedor" class="filter-field">
+            <input type="date" id="fecha-filtro" placeholder="Fecha de Venta" class="filter-field">
+
+            <button type="submit" id="apply-filters" class="btn-submit">Consultar</button>
+            <button type="reset" id="reset-filters" class="btn">Limpiar</button>
+
+        </form>
+
+        <br>
+
+        <div class="table-container">
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>No. Venta</th>
+                        <th>Nombre</th>
+                        <th>Genero</th>
+                        <th>Plataforma</th>
+                        <th>Vendedor</th>
+                        <th>Fecha de Venta</th>
+                        <th>Precio de venta</th>
+                        <th>Detalle</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="data-table-body">
+                    <!-- Llenaremos la tabla con datos consumidos desde una api -->
+                </tbody>
+            </table>
+
         </div>
-      </form>
 
-      <div class="table-container">
-        <table id="data-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Nombre</th>
-              <th>Genero</th>
-              <th>Plataforma</th>
-              <th>Precio</th>
-              <th>Rating</th>
-            </tr>
-          </thead>
-          <tbody id="data-table-body">
-            <!-- Aquí se generará la tabla dinámicamente -->
-          </tbody>
-        </table>
-      </div>
+        <div id="message" class="message">
+            <p>No se ha realizado una consulta.</p>
+        </div>
 
-      <div id="message">
-        <p>No hay juegos disponibles en este momento.</p>
-      </div>
-    </section>
+        <div id="modal-background" class="modal-background">
 
-    <!-- Javascript Filtro -->
-    <script src="./assets/js/filter.js"></script>
-    <!-- Btn js arriba -->
-    <button id="btn-ir-arriba">
-      <img src="./assets/img/random/up.png" />
-    </button>
-  </body>
+        </div>
+
+        <div id="modal" class="modal">
+
+            <h2>NUEVA VENTA</h2>
+
+            <form id="sale-form" class="form-section">
+
+                <div class="input-container">
+                    <select id="juego" class="form-field" placeholder="Selecciona un Juego" required>
+                        <option value="" selected disabled hidden>Selecciona un Juego</option>
+                        <option value="Zelda">The Legend of Zelda: Breath of the Wild</option>
+                        <option value="GTAV">Grand Theft Auto V</option>
+                        <option value="Minecraft">Minecraft</option>
+                        <option value="FIFA">FIFA 23</option>
+                    </select>
+                    <label for="juego" class="label-input">Selecciona un Juego</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="genero" class="form-field" placeholder="Genero" required>
+                    <label for="genero" class="label-input">Genero</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="plataforma" class="form-field" placeholder="Plataforma" required>
+                    <label for="plataforma" class="label-input">Plataforma</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" id="precio" class="form-field" placeholder="Precio de Venta" required min="0">
+                    <label for="precio" class="label-input">Precio de Venta</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="fecha" class="form-field" placeholder="Fecha de Venta"
+                        onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                    <label for="fecha" class="label-input">Fecha de Venta</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="vendedor" class="form-field" placeholder="Vendedor" required>
+                    <label for="vendedor" class="label-input">Vendedor</label>
+                </div>
+                <div class="input-container">
+                    <textarea id="detalle" class="form-field" placeholder="Detalles de la Venta" required></textarea>
+                    <label for="detalle" class="label-input">Detalles de la Venta</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Guardar Venta</button>
+
+            </form>
+
+        </div>
+
+        <!-- Btn js arriba -->
+        <button id="btn-ir-arriba">
+            <img src="./assets/img/random/up.png" />
+        </button>
+    </main>
+    <!-- Javascript Imports -->
+    <script src="./shared/utils.js"></script>
+    <script src="./shared/fetch-api.js"></script>
+    <script src="./assets/js/venta.js"></script>
+</body>
+
 </html>

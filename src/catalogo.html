@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Play&Win - Catalogo</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/catalogo.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/media.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-Quartz.css" />
+</head>
+
+<body>
+  <!-- Javascript -->
+  <script src="./assets/js/main.js"></script>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">
+      <a href="../index.html" class="logo-toggle">
+        <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index" />
+      </a>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li>
+          <a class="a-navbar" href="../index.html#juegos" onclick="toggleMenu()">Juegos</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../index.html#comunidad" onclick="toggleMenu()">Comunidad</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../index.html#contacto" onclick="toggleMenu()">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="../index.html" class="logo-toggle">
+        <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index" />
+      </a>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li>
+          <a class="a-navbar" href="../index.html#juegos" onclick="toggleMenu()">Juegos</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../index.html#comunidad" onclick="toggleMenu()">Comunidad</a>
+        </li>
+        <li>
+          <a class="a-navbar" href="../index.html#contacto" onclick="toggleMenu()">Contacto</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Venta de Juegos -->
+  <section id="venta">
+    <div class="section-container-venta">
+      <h1 class="title-venta">Catalogo de Juegos</h1>
+      <div class="section-container"></div>
+    </div>
+  </section>
+  <section class="filtrojuegos">
+    <h2 class="text-filtros">Filtros</h2>
+    <form id="filter-form">
+      <div id="filter-section" class="grid">
+        <input type="text" id="text" placeholder="Nombre" class="filter-field" />
+        <input type="text" id="genre" placeholder="Genero" class="filter-field" />
+        <input type="text" id="platform" placeholder="Plataforma" class="filter-field" />
+        <input type="number" id="rating" placeholder="Rating" class="filter-field" min="0" />
+        <input type="number" id="price-min" placeholder="Precio mínimo" class="filter-field" min="0" />
+        <input type="number" id="price-max" placeholder="Precio máximo" class="filter-field" min="0" />
+      </div>
+      <div class="btn">
+        <button type="submit" id="apply-filters">Aplicar filtros</button>
+        <button type="reset" id="reset-filters">Restablecer</button>
+      </div>
+    </form>
+
+    <div class="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Nombre</th>
+            <th>Genero</th>
+            <th>Plataforma</th>
+            <th>Precio</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody id="data-table-body">
+          <!-- Aquí se generará la tabla dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="message">
+      <p>No hay juegos disponibles en este momento.</p>
+    </div>
+  </section>
+
+  <!-- Javascript Filtro -->
+  <script src="./assets/js/filter.js"></script>
+  <!-- Btn js arriba -->
+  <button id="btn-ir-arriba">
+    <img src="./assets/img/random/up.png" />
+  </button>
+</body>
+
+</html>
