@@ -1,90 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Play&Win - Home</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/index.css"/>
-    <link rel="stylesheet" href="../assets/css/main.css"/>
-    <link rel="stylesheet" href="../assets/css/media.css"/>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Play&Win - Home</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/media.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
 
-  <body>
-    <!-- Javascript -->
-    <script src="../assets/js/main.js"></script>
+<body>
+  <!-- Javascript -->
+  <script src="../assets/js/main.js"></script>
 
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="logo">
-        <a href="../index.html" class="logo-toggle">
-          <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index">
-        </a>
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li><a class="a-navbar" href="#juegos" onclick="toggleMenu()">Juegos</a></li>
-          <li><a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a></li>
-          <li><a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a></li>
-          <li><a class="a-navbar" href="#Comunidad" onclick="toggleMenu()">Comunidad</a></li>
-          <li><a class="a-navbar" href="#contacto" onclick="toggleMenu()">Contacto</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <a href="../index.html" class="logo-toggle">
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">
+      <a href="../index.html" class="logo-toggle">
         <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index">
-        </a>
+      </a>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a class="a-navbar" href="#juegos" onclick="toggleMenu()">Juegos</a></li>
+        <li><a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a></li>
+        <li><a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a></li>
+        <li><a class="a-navbar" href="#Comunidad" onclick="toggleMenu()">Comunidad</a></li>
+        <li><a class="a-navbar" href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="../index.html" class="logo-toggle">
+        <img src="../assets/img/Logo/play & win logo.PNG" alt="Logo Index">
+      </a>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a class="a-navbar" href="#juegos" onclick="toggleMenu()">Juegos</a></li>
-          <li><a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a></li>
-          <li><a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a></li>
-          <li><a class="a-navbar" href="#Comunidad" onclick="toggleMenu()">Comunidad</a></li>
-          <li><a class="a-navbar" href="#contacto" onclick="toggleMenu()">Contacto</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a class="a-navbar" href="#juegos" onclick="toggleMenu()">Juegos</a></li>
+        <li><a class="a-navbar" href="../catalogo.html" onclick="toggleMenu()">Catalogo</a></li>
+        <li><a class="a-navbar" href="../venta.html" onclick="toggleMenu()">Ventas</a></li>
+        <li><a class="a-navbar" href="#Comunidad" onclick="toggleMenu()">Comunidad</a></li>
+        <li><a class="a-navbar" href="#contacto" onclick="toggleMenu()">Contacto</a></li>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Juegos -->
-    <section id="juegos">
-      <div class="section-container-juegos">
-        <h1 class="title-juegos">Juegos</h1>
-        <div class="section-container">
-        </div>
-      </div>
-    </section>
-
-        <!-- Comunidad -->
-        <section id="comunidad">
-          <div class="section-container-comunidad">
-            <h1 class="title-comunidad">Comunidad</h1>
-            <div class="section-container">
+  <!-- Juegos -->
+  <section id="juegos">
+    <div class="card-avisos">
+      <h1 class="title-juegos">Juegos</h1>
+      <div class="tabset-avisos">
+        <input type="radio" name="tabset-avisos" id="tab1avisos" aria-controls="tab1avisos" checked>
+        <div class="tab-panels-avisos">
+          <section id="tab1avisos" class="tab-panel-avisos">
+            <div class="row row-cols-1 row-cols-md-3 g-4 card-noticias">
+              <div class="col">
+                <div class="card card-tabs">
+                  <img src="./assets/img/juegos/apex-legends.jpg" class="card-img-tabs">
+                  <div class="card-body-tabs h-100">
+                    <h5 class="card-title-tabs h5-dark">Apex Legends</h5>
+                    <p class="card-text-tabs">Elige tu leyenda favorita y lucha por la victoria en este emocionante
+                      juego de battle royale. Explora el mapa, recoge armas y equipo, y derrota a tus enemigos para ser
+                      el último en pie.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/baseball.jpg" class="card-img-tabs">
+                  <div class="card-body-tabs">
+                    <h5 class="card-title-tabs h5-dark">Super Mega Baseball</h5>
+                    <p class="card-text-tabs">Siente la emoción del juego más grande del mundo con este juego de béisbol
+                      realista. Elige tu equipo favorito y compite contra otros jugadores de todo el mundo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/sims.jpg" class="card-img-tabs">
+                  <div class="card-body-tabs">
+                    <h5 class="card-title-tabs h5-dark">Los Sims 4</h5>
+                    <p class="card-text-tabs">Crea y controla tus propios personajes virtuales. Decide cómo vivirán sus
+                      vidas, desde su carrera hasta sus relaciones, y crea tus propias historias y experiencias.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/fc-24.jpeg" class="card-img-tabs">
+                  <div class="card-body-tabs">
+                    <h5 class="card-title-tabs h5-dark">EA SPORTS FC 24</h5>
+                    <p class="card-text-tabs">En este torneo, competirás contra los mejores jugadores de todo el mundo
+                      en una batalla por la gloria. Grandes premios y recompensas te esperan, así que no lo pienses dos
+                      veces y únete a la acción.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/immortals.jpg" class="card-img-tabs">
+                  <div class="card-body-tabs">
+                    <h5 class="card-title-tabs h5-dark">Immortals of Aveum</h5>
+                    <p class="card-text-tabs">Immortals of Aveum es el torneo de FPS más emocionante del año. Demuestra
+                      tus habilidades y compite contra los mejores jugadores del mundo en una batalla por la gloria.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/madden-24.jpg" class="card-img-tabs">
+                  <div class="card-body-tabs">
+                    <h5 class="card-title-tabs h5-dark">Madden NFL 24</h5>
+                    <p class="card-text-tabs">Madden NFL 24 es el videojuego de fútbol americano más nuevo y realista
+                      del mercado, con una jugabilidad innovadora, gráficos impresionantes y nuevos modos emocionantes.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <!-- Contacto -->
-                <section id="contacto">
-                  <div class="section-container-contacto">
-                    <h1 class="title-contacto">Contacto</h1>
-                    <div class="section-container">
+  <!-- Comunidad -->
+  <section id="comunidad">
+    <div class="card-reseñas">
+      <h1 class="title-comunidad">Comunidad</h1>
+      <div class="tabset-reseñas">
+        <input type="radio" name="tabset-reseñas" id="tab1reseñas" aria-controls="tab1reseñas" checked>
+        <div class="tab-panels-reseñas">
+          <section id="tab1avisos" class="tab-panel-avisos">
+            <div class="row row-cols-1 row-cols-md-3 g-4 card-reseña">
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/f1.jpg" class="card-img-tabs">
+                  <div class="card-body testimonial-content">
+                    <h1 class="game-title">F1 23</h1>
+                    <div class="user-info">
+                      <p class="user-name">By: SpeedyRacer23</p>
+                    </div>
+                    <p class="user-review">F1 ofrece carreras realistas y
+                      emocionantes. Los circuitos y autos están detallados, y la
+                      experiencia</p>
+                    <div class="game-rating">
+                      <span class="rating-label">Calificación:</span>
+                      <span class="rating-value">4.5 / 5</span>
                     </div>
                   </div>
-                </section>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/starwars.png" class="card-img-tabs">
+                  <div class="card-body testimonial-content">
+                    <h1 class="game-title">Star Wars Jedi: Fallen Order</h1>
+                    <div class="user-info">
+                      <p class="user-name">By: GamerMaster</p>
+                    </div>
+                    <p class="user-review">Una aventura épica de Star Wars con
+                      combates auténticos y emocionantes. La narrativa es inmersiva, pero algunos puzles
+                      pueden ser desafiantes.</p>
+                    <div class="game-rating">
+                      <span class="rating-label">Calificación:</span>
+                      <span class="rating-value">4 / 5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-tabs h-100">
+                  <img src="./assets/img/juegos/sims-banner.png" class="card-img-tabs">
+                  <div class="card-body testimonial-content">
+                    <h1 class="game-title">Los Sims 4</h1>
+                    <div class="user-info">
+                      <p class="user-name">By: PixelPrincess</p>
+                    </div>
+                    <p class="user-review">¡Los Sims 4 ofrece una vida virtual
+                      fascinante con
+                      personalización y opciones de carrera emocionantes! Los
+                      detalles son asombrosos, pero los tiempos de carga pueden
+                      ser largos.</p>
+                    <div class="game-rating">
+                      <span class="rating-label">Calificación:</span>
+                      <span class="rating-value">3.5 / 5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Btn js arriba -->
-    <button id="btn-ir-arriba">
-      <img src="./assets/img/random/up.png" />
-    </button>
 
-  </body>
+  <!-- Contacto -->
+  <section id="contacto">
+    <footer>
+      <div class="jumbotron">
+        <h1 class="title-contacto">Contacto</h1>
+        <div class="container d-flex justify-content-center align-items-center">
+          <form id="myForm">
+            <div class="form-group position-relative">
+              <label for="formName" class="d-block">
+                <i class="fa fa-user icon"></i>
+              </label>
+              <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Nombre" required>
+            </div>
+            <div class="form-group position-relative">
+              <label for="formEmail" class="d-block">
+                <i class="fa fa-envelope icon"></i>
+              </label>
+              <input type="email" id="formEmail" class="form-control form-control-lg thick"
+                placeholder="Correo Electrónico" required>
+            </div>
+            <div class="form-group message">
+              <textarea id="formMessage" class="form-control form-control-lg" rows="7"
+                placeholder="Escribe tu Mensaje..." required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="submit-button" tabIndex="-1">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <hr class="my-4">
+        <div class="social">
+          <ul class="social-links">
+            <li><a href="#"><img src="./assets/img/Social Media/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./assets/img/Social Media/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="./assets/img/Social Media/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./assets/img/Social Media/youtube.png" alt="Youtube"></a></li>
+          </ul>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Servicios</a></li>
+          <li class="list-inline-item"><a href="#">Sobre Nosotros</a></li>
+          <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+          <li class="list-inline-item"><a href="#">Politica de Privacidad</a></li>
+        </ul>
+        <p class="copyright">Play & Win © 2023</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Btn js arriba -->
+  <button id="btn-ir-arriba">
+    <img src="./assets/img/random/up.png" />
+  </button>
+
+</body>
+
 </html>

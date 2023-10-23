@@ -21,40 +21,59 @@
   margin-top: 3%;
 }
 
-.section-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 4rem;
-  height: 100%;
-}
-
 .title-juegos {
   font-size: 3rem;
   text-align: center;
   color: var(--bs-blue);
 }
 
-/* Comunidad */
-#comunidad {
-  position: relative;
-  margin-top: 3%;
+.card-title-tabs{
+  padding-top: 2%;
+  font-size: 22px;
+  color: var(--color-black);
+  font-weight: 900;
 }
 
-.section-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 4rem;
-  height: 100%;
+.tabset-avisos{
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.title-comunidad {
-  font-size: 3rem;
+.tabset-avisos>input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset-avisos .tab-panel-avisos {
+  display: none;
+}
+
+.card-body-tabs{
   text-align: center;
-  color: var(--bs-blue);
+}
+
+.tabset-avisos>input:first-child:checked~.tab-panels-avisos>.tab-panel-avisos:first-child{
+  display: block;
+}
+
+.tabset-avisos>label {
+  display: inline-block;
+  padding: 15px 15px 15px;
+  border-bottom: 0;
+  color: var(---black);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tabset-avisos>label:hover,
+.tabset-avisos>input:focus+label,
+.tabset-avisos>input:checked+label {
+  color: var(--color-black);
+}
+
+.tabset-avisos>input:checked+label {
+  border-color: #ccc;
+  margin-bottom: -1px;
 }
 
 /* Contacto */
@@ -63,17 +82,273 @@
   margin-top: 3%;
 }
 
-.section-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 4rem;
-  height: 100%;
-}
-
 .title-contacto {
   font-size: 3rem;
   text-align: center;
   color: var(--bs-blue);
 }
+
+.jumbotron {
+  padding: 40px 0;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.jumbotron ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.jumbotron li {
+  padding: 0 10px;
+}
+
+.jumbotron ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.jumbotron ul a:hover {
+  opacity: 1;
+}
+
+.jumbotron .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.jumbotron .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.jumbotron .social>a:hover {
+  opacity: 0.9;
+}
+
+.jumbotron .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.display-6 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.lead {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+form {
+  min-width: 25rem;
+}
+form .title {
+  color: #212529;
+  font-size: 2.5rem;
+}
+form .form-control {
+  background-color: #f2f6f8;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+  margin-top: 4%;
+
+}
+form .form-control.thick {
+  height: 3.3rem;
+  padding: 0.5rem 3.5rem;
+}
+form .form-control:focus {
+  background-color: #f2f6f8;
+  border: none;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+form .message .form-control {
+  padding: 0.5rem 1.8rem;
+}
+form ::placeholder {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #838788;
+  position: relative;
+  left: 0;
+}
+form input,
+form textarea {
+  color: #212529;
+  font-size: 1.1rem;
+}
+form .icon {
+  color: #57565c;
+  height: 1.3rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.1rem;
+}
+
+.submit-button[type="submit"]{
+  background-color: var(--bs-blue);
+  color: var(--color-white);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 4%;
+}
+
+.mensaje {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #81c7aa;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+form .icon {
+  color: #57565c;
+  height: 1.3rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.1rem;
+}
+
+.social-links li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Comunidad */
+#comunidad {
+  position: relative;
+  margin-top: 3%;
+}
+
+.title-comunidad {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--bs-blue);
+}
+
+.tabset-reseñas{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tabset-reseñas>input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset-reseñas .tab-panel-reseñas {
+  display: none;
+}
+
+.tabset-reseñas>input:first-child:checked~.tab-panels-reseñas>.tab-panel-reseñas:first-child{
+  display: block;
+}
+
+.tabset-reseñas>label {
+  display: inline-block;
+  padding: 15px 15px 15px;
+  border-bottom: 0;
+  color: var(--color-black);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tabset-reseñas>label:hover,
+.tabset-reseñas>input:focus+label,
+.tabset-reseñas>input:checked+label {
+  color: var(--color-black);
+}
+
+.tabset-reseñas>input:checked+label {
+  border-color: #ccc;
+  margin-bottom: -1px;
+}
+
+ .testimonial-content {
+    flex-grow: 1;
+  }
+
+  .game-title {
+    font-size: 30px;
+    margin: 10px 0;
+    color: var(--bs-purple);
+  }
+
+  .game-description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 20px 0;
+  }
+
+  .game-rating {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .rating-label {
+    font-weight: bold;
+  }
+
+  .rating-value {
+    color: var(--bs-pink);
+    font-weight: bold;
+  }
+
+  .user-info {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .user-name {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .user-review {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-not-to-black);
+  }
+
+  .card-reseñas{
+padding-bottom: 5%;
+  }
